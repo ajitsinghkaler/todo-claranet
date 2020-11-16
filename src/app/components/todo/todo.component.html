@@ -1,0 +1,12 @@
+<ng-container *ngIf="todos$|async as todos;else errBlock">
+  <ng-container *ngIf="todos.length; else empty">
+    <app-todo-list (createTodo)="router.navigate(['add'])" (editTodo)="router.navigate(['edit',$event])"
+      [todos]="todos"></app-todo-list>
+  </ng-container>
+  <ng-template #empty>
+    No todos found for this user
+  </ng-template>
+</ng-container>
+<ng-template #errBlock>
+  An error occured while fetching todos
+</ng-template>
