@@ -1,5 +1,3 @@
-<ng-container *ngIf="todo$|async as todo;else edit">
-  <h1>Edit todo</h1>
-</ng-container>
-<ng-template #edit><h1>Create new todo</h1></ng-template>
-<app-todo-create-form (todo)="addUpdateTodo()" [todoForm]="todoForm" [message]="message"></app-todo-create-form>
+<h1>Create new todo</h1>
+<app-todo-create-form (todo)="addTodo()" [todoForm]="todoForm"></app-todo-create-form>
+<div class="message" *ngIf="todoMsg|async as msg">{{msg}}</div>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
 import { Todo } from 'src/app/models/todo.model';
 import { TodoService } from 'src/app/services/todo/todo.service';
 
@@ -11,10 +12,18 @@ import { TodoService } from 'src/app/services/todo/todo.service';
 })
 export class TodoComponent {
   todos$: Observable<Todo[]> = this.todoService.todos$;
-  constructor(
-    private readonly todoService: TodoService,
-    public router: Router
-  ) {
-    this.todoService.getTodos().subscribe();
+  constructor(private todoService: TodoService, private router: Router) {}
+
+  deleteTodo(todo: Todo): void {
+    this.todoService.deleteTodo({ ...todo, deleted: true }).subscribe();
+  }
+
+  navigate(params: Array<string>): void {
+    this.router.navigate(params);
+  }
+
+  markComplete(todo: Todo): void {
+
+    this.todoService.editTodo({ ...todo, status: 'done' }).subscribe();
   }
 }

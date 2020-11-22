@@ -9,7 +9,7 @@
       "status": "todo",
       "created": "",
       "edited": "",
-      "deleted": false
+      "deleted": true
     },
     {
       "id": 2,
@@ -19,19 +19,19 @@
       "status": "todo",
       "created": "",
       "edited": "",
-      "deleted": false,
+      "deleted": true,
       "owner": "ajit"
     },
     {
       "id": 3,
-      "title": "Bring Sugar",
+      "title": "Bring Sugar new",
+      "owner": "ajit",
       "body": "Need a pound of sugar for tea and cake",
       "media": "",
-      "status": "todo",
+      "status": "done",
       "created": "",
-      "edited": "",
-      "deleted": false,
-      "owner": "ajit"
+      "edited": "2020-11-22T13:09:05.191Z",
+      "deleted": false
     },
     {
       "id": 4,
@@ -52,7 +52,7 @@
       "status": "todo",
       "created": "2020-11-15T14:06:38.426Z",
       "edited": "",
-      "deleted": false,
+      "deleted": true,
       "id": 5
     },
     {
@@ -60,7 +60,7 @@
       "owner": "Ajit",
       "body": "Hello",
       "media": "https://supersimple.com/wp-content/uploads/hello-2-1080-740.jpg",
-      "status": "todo",
+      "status": "done",
       "created": "2020-11-15T14:06:38.426Z",
       "edited": "",
       "deleted": false,
@@ -76,6 +76,105 @@
       "edited": "",
       "deleted": false,
       "id": 7
+    },
+    {
+      "id": 8,
+      "title": "test Ajit this is edited",
+      "owner": "amrit",
+      "body": "Testing this new",
+      "media": "https://www.schudio.com/wp-content/uploads/2018/11/TheBenefitsofUsingSocialMediainSchools_Blog-Detail.png",
+      "status": "todo",
+      "created": "2020-11-17T04:46:16.861Z",
+      "edited": "",
+      "deleted": false
+    },
+    {
+      "title": "test Ajit",
+      "owner": "amrit",
+      "body": "Testing this",
+      "media": "https://www.schudio.com/wp-content/uploads/2018/11/TheBenefitsofUsingSocialMediainSchools_Blog-Detail.png",
+      "status": "todo",
+      "created": "2020-11-17T04:46:16.861Z",
+      "edited": "",
+      "deleted": false,
+      "id": 9
+    },
+    {
+      "title": "test Ajit",
+      "owner": "amrit",
+      "body": "Testing this",
+      "media": "https://www.schudio.com/wp-content/uploads/2018/11/TheBenefitsofUsingSocialMediainSchools_Blog-Detail.png",
+      "status": "todo",
+      "created": "2020-11-17T04:46:16.861Z",
+      "edited": "",
+      "deleted": false,
+      "id": 10
+    },
+    {
+      "title": "helo this is new tas",
+      "owner": "Vipin",
+      "body": "new ytas",
+      "media": "",
+      "status": "todo",
+      "created": "2020-11-22T12:35:56.744Z",
+      "edited": "",
+      "deleted": false,
+      "id": 61
+    },
+    {
+      "title": "new ne",
+      "owner": "dsada",
+      "body": "",
+      "media": "",
+      "status": "todo",
+      "created": "2020-11-22T12:36:34.011Z",
+      "edited": "",
+      "deleted": false,
+      "id": 62
+    },
+    {
+      "title": "new ne",
+      "owner": "dsada",
+      "body": "",
+      "media": "",
+      "status": "todo",
+      "created": "2020-11-22T12:36:34.011Z",
+      "edited": "",
+      "deleted": false,
+      "id": 63
+    },
+    {
+      "title": "new neasA",
+      "owner": "dsada",
+      "body": "",
+      "media": "",
+      "status": "todo",
+      "created": "2020-11-22T12:36:34.011Z",
+      "edited": "",
+      "deleted": false,
+      "id": 64
+    },
+    {
+      "title": "New task setup",
+      "owner": "ajit",
+      "body": "",
+      "media": "",
+      "status": "todo",
+      "created": "2020-11-22T13:07:22.026Z",
+      "edited": "",
+      "deleted": false,
+      "id": 65
+    },
+    {
+      "title": "New task setup",
+      "owner": "test",
+      "body": "",
+      "media": "",
+      "status": "todo",
+      "created": "2020-11-22T13:08:31.008Z",
+      "edited": "",
+      "deleted": false,
+      "id": 66
     }
   ]
 }

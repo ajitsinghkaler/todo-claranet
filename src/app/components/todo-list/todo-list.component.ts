@@ -7,8 +7,10 @@ import { Todo } from 'src/app/models/todo.model';
   styleUrls: ['./todo-list.component.scss'],
 })
 export class TodoListComponent {
-  @Input() todos: Todo[]  = [];
+  @Input() todos: Todo[] = [];
   @Output() editTodo = new EventEmitter();
   @Output() createTodo = new EventEmitter();
+  @Output() deleteTodo = new EventEmitter();
+  @Output() markComplete = new EventEmitter();
   constructor() {}
 }

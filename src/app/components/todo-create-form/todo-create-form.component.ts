@@ -8,8 +8,8 @@ import { FormGroup } from '@angular/forms';
 })
 export class TodoCreateFormComponent {
   @Input() todoForm!: FormGroup ;
-  @Input() message = '';
   @Output() todo = new EventEmitter();
 
-  constructor() {}
+  constructor() {
+  }
 }
