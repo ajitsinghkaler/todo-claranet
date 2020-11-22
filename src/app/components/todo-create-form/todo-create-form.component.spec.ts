@@ -5,8 +5,6 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { By } from '@angular/platform-browser';
-import { Todo } from 'src/app/models/todo.model';
 import { TodoCreateFormComponent } from './todo-create-form.component';
 
 describe('TodoCreateFormComponent', () => {

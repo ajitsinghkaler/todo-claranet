@@ -4,7 +4,6 @@ import {
   BehaviorSubject,
   ConnectableObservable,
   Observable,
-  Subject,
   throwError,
 } from 'rxjs';
 import { Todo } from 'src/app/models/todo.model';

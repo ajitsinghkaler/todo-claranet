@@ -4,9 +4,7 @@ import { TodoInterceptor } from './todo.interceptor';
 
 describe('TodoInterceptor', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    providers: [
-      TodoInterceptor
-      ]
+    providers: [TodoInterceptor]
   }));
 
   it('should be created', () => {

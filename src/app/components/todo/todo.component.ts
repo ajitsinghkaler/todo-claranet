@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { tap } from 'rxjs/operators';
 import { Todo } from 'src/app/models/todo.model';
 import { TodoService } from 'src/app/services/todo/todo.service';
 

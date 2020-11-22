@@ -5,14 +5,12 @@ import {
   tick,
 } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 
 import { TodoCreateComponent } from './todo-create.component';
 import { TodoCreateFormComponent } from '../todo-create-form/todo-create-form.component';
 import { TodoService } from 'src/app/services/todo/todo.service';
 import { MockTodoService } from 'src/app/mockServices/todo.mock-service';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Injector } from '@angular/core';
 import { Todo } from 'src/app/models/todo.model';
 
 describe('TodoCreateComponent', () => {

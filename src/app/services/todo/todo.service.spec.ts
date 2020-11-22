@@ -1,4 +1,3 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import {
   HttpClientTestingModule,
   HttpTestingController,
@@ -84,7 +83,7 @@ describe('TodoService', () => {
     };
 
     it('should add the new todo at the end', () => {
-      todoService.addTodo(todo).subscribe((msg)=>{
+      todoService.addTodo(todo).subscribe((msg) => {
         expect(msg).toEqual('Todo Success fully added');
       });
       const request = httpMock.expectOne('todos');
@@ -115,7 +114,7 @@ describe('TodoService', () => {
   describe('editTodo', () => {
     it('should change the title if title is changed in the passed todo', () => {
       const mockTodo: Todo = { ...mockTodos[0], title: 'Bring Eggs' };
-      todoService.editTodo(mockTodo).subscribe((msg)=>{
+      todoService.editTodo(mockTodo).subscribe((msg) => {
         expect(msg).toEqual('Todo Successfully updated');
       });
       const request = httpMock.expectOne(`todos/${mockTodo.id}`);
@@ -129,7 +128,7 @@ describe('TodoService', () => {
 
     it('should change the body if body is changed in the passed todo', () => {
       const mockTodo: Todo = { ...mockTodos[0], body: 'This is my new body' };
-      todoService.editTodo(mockTodo).subscribe((msg)=>{
+      todoService.editTodo(mockTodo).subscribe((msg) => {
         expect(msg).toEqual('Todo Successfully updated');
       });
       const request = httpMock.expectOne(`todos/${mockTodo.id}`);
